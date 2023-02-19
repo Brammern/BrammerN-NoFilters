@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { container, DependencyContainer } from "tsyringe";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
@@ -16,13 +17,13 @@ class Mod implements IPostDBLoadMod
         const config = this.modConfig;
 
         const Cases = config.Cases
-        const SecureCon = config.SecureCon
+        /*const SecureCon = config.SecureCon
         const SecureConID = ["5857a8bc2459772bad15db29",
             "59db794186f77448bc595262",
             "5857a8b324597729ab0a0e7d",
             "544a11ac4bdc2d470e8b456a",
             "5c093ca986f7740a1867ab12"
-        ]
+        ]*/
         const CasesID = ["590c60fc86f77412b13fddcf",
             "62a09d3bcf4a99369e262447",
             "619cbf9e0a7c3a1a2731940a",
@@ -67,12 +68,7 @@ class Mod implements IPostDBLoadMod
             Cases.MoneyCaseFilter,
             Cases.HolodilnickCaseFilter,
             Cases.WZWalletFilter,
-            Cases.SimpleWalletFilter,
-            SecureCon.GammaConFilter,
-            SecureCon.EpsilonConFilter,
-            SecureCon.BetaConFilter,
-            SecureCon.AlphaConFilter,
-            SecureCon.KappaConFilter
+            Cases.SimpleWalletFilter
         ]
 
         for (const Filters in Filts)
@@ -80,7 +76,6 @@ class Mod implements IPostDBLoadMod
             if (Filts[Filters])
             {
                 items[CasesID[Filters]]._props.Grids[0]._props.filters = [];
-                items[SecureConID[Filters]]._props.Grids[0]._props.filters = [];
             }
         }
     }

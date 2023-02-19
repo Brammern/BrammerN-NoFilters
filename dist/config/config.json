@@ -1,0 +1,32 @@
+{
+    "Cases": {
+        "DocsCaseFilter": true,
+        "GinkeychainFilter": true,
+        "KeycardHolderFilter": true,
+        "InjectorCaseFilter": true,
+        "PistolCaseFilter": true,
+        "SiccCaseFilter": true,
+        "GrenadeCaseFilter": true,
+        "LuckyScavFilter": true,
+        "MedcaseFilter": true,
+        "THICCItemsFilter": true,
+        "THICCWeaponsFilter": true,
+        "AmmoCaseFilter": true,
+        "WeaponsCaseFilter": true,
+        "ItemsCaseFilter": true,
+        "KeytoolFilter": true,
+        "MagsCaseFilter": true,
+        "DogtagCaseFilter": true,
+        "MoneyCaseFilter": true,
+        "HolodilnickCaseFilter": true,
+        "WZWalletFilter": true,
+        "SimpleWalletFilter": true
+    },
+    "SecureCon": {
+        "GammeConFilter": true,
+        "EpsilonConFilter": true,
+        "BetaConFilter": true,
+        "AlphaConFilter": true,
+        "KappaConFilter": true
+    }
+}
